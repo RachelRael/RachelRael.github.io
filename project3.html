@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tableau Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<h1>Super Store Sale Project</h1>
+					<p>Maximizing Tableau data visualization tools for an in-depth profit analysis</p>
+				</header>
+
+			<!-- Main -->
+				<div id="main">
+
+					<!-- Content -->
+						<section id="content" class="main">
+							
+							<h2>Purpose</h2>
+							<p>Focused on leveraging Tableau's data visualization tools to gain a deeper understanding of the business challenge at hand: increasing revenue while simultaneously reducing costs and maximizing profitability.</p>
+							
+
+
+
+							<h2>Establishing Data Source</h2>
+							<span class="image main"><img src="images/Data Source.png" alt="" /></span>
+							<p>I imported all the tables from the dataset, including orders, customers, products, regions, and returns. Establishing the relationships between these tables and ensuring that data field types match appropriately is a critical step to facilitate seamless analysis within Tableau.</p>
+							<p>The approach I adopted aimed to establish a comprehensive understanding and furnish evidence for the business problem by identifying and analyzing high-level Key Performance Indicators (KPIs).</p>
+							<p>Additionally, an interactive dynamic dashboard with a drop down list and visual buttons (using action and filter tools) was crafted to facilitate understanding and in-depth analysis across the three distinct categorical product lines: furniture, office supplies, and technology.</p>
+							
+
+
+
+
+
+							<h2>Data Analysis by Category</h2>
+							<span class="image main"><img src="images/Interactive Dash.png" alt="" /></span>
+							<p>In the following visuals, the furniture and technology categories prominently stand out. Specifically, the sub-categories of tables and machines exhibit notably poor performance in terms of profit ratio, often falling into the negative range or below the horizontal axis.</p>
+							<span class="image main"><img src="images/Furniture.png" alt="" /></span>
+							<P>For tables, it's evident that the average order consistently comprises of a "big" quantity of items (ranging from 140 to 250 units per order). Furthermore, these table orders frequently involve "medium" (10-25%) to "big" (>25%) discounts, with no orders placed at the full shelf price. This discounting strategy ("medium" discounts on "big" order sizes) contributes to the significantly poor profit ratio. To reduce the cognitive load with data visuzliation, I introduced calculated fields categorizing order sizes and discounts into "small", "medium", and "big", streamlining data interpretation. I also strategically chose the color red for "big" discounts to highlight the correlation of a poor profit-ratio. </P>
+							<span class="image main"><img src="images/Technology.png" alt="" /></span>
+							<p>Similarly, machines orders typically consist of "big" orders and are subject to "big" discounts, resulting in an unfavorable profit ratio.</p>
+							<span class="image main"><img src="images/Days and Returns.png" alt="" /></span>
+							<p>Furthermore, many of these sales transactions yield higher profit ratios during weekdays but are frequently returned due to issues related to delivery or incorrect item provision. This suggests potential quality control challenges in the shipping and handling processes, warranting further tracking and analysis of relevant data to address these issues effectively.</p>
+							
+
+
+
+
+							
+							<h2>Tables Sub-Category</h2>
+							<span class="image main"><img src="images/Tables Days.png" alt="" /></span>
+							<p>Focusing specifically on the tables sub-category, the heatmap offers a quick visual tool for identifying the worst profit producing days and months for table sales. It was discovered that weekdays in January, May, June, and August emerged as the worst seasons for table sales. Within this subset of table sales, the consumer segment comprises the largest share of clients purchasing tables. It can be suggested to increase the final price or reduce the significance of discounts to "small" or "medium" during these times. </p>
+							<p>Furthermore, when examining returns in this sub-category, it becomes apparent that the most prevalent reason for returns is the delivery of the wrong item, closely followed by instances where items were not successfully delivered.</p>
+							
+							<span class="image main"><img src="images/Tables Salespersons.png" alt="" /></span>
+							<p>To discern which salespersons had a positive profit ratio, I utilized the color green to signify a positive ratio and red for a negative one. With the exception of two salespersons, all others were unable to contribute to any profit in table sales. This observation suggests that the root cause of the negative profit ratio may be related to pricing strategies.</p>
+							<p>Additionally, I utilized the width of the bars to represent the magnitude of discounts offered by each salesperson, aiming to uncover potential correlations between salespersons' profitability and their discount practices. Notably, Anna A. stands out as the salesperson offering the highest total amount of discounts, and thus, maintains a profit ratio of -0.50%. It's possible that by implementing more controlled discounting practices, her profit ratio could see improvement.</p>
+
+
+
+
+
+
+							<h2>Machines Sub-Category</h2>
+							<p>In the context of the machines sub-category, I conducted a similar analysis to identify the underperforming months, distinctions between weekdays and weekends, segment type, profit ratio, and discounts based on salespersons. </p>
+							
+							<span class="image main"><img src="images/Machines days.png" alt="" /></span>
+							<p>The analysis revealed that the worst profit ratio periods for machines were during weekends in June, July, and November. Additionally, it was evident that the majority of machine customers fall within the average consumer segment and often return their purchases due to receiving the wrong item. This once again underscores a recurring pattern where consumers frequently receive incorrect items, a trend observed in both printers and tables, which are the least profitable products. </p>
+
+							<span class="image main"><img src="images/Machines salespersons.png" alt="" /></span>
+							<p>The analysis of salespersons and the discounts offered in the machines subcategory exhibited significantly better results compared to the tables subcategory. Notably, Beatrice T. offered more discounts than Annelis W., and interestingly, both of them were the only salespersons to contribute to a negative profit ratio within this subcategory. To gain a deeper understanding of the differentiating characteristics that may account for why these two salespersons are the only ones with a poor profit margin, further analysis and investigation are warranted. </p>
+
+
+
+
+
+
+							<h2>Worst Products</h2>
+							<p>Analyzing the data at both the categorical and sub-category levels has provided valuable insights, allowing for a more granular understanding of the underlying factors. Particularly, it becomes evident that the worst-performing products in the tables and machines sub-categories exhibit the poorest profit ratios. </p>
+							
+							<span class="image main"><img src="images/Worst Products.png" alt="" /></span>
+							<p>To gain a deeper understanding, I not only considered profit ratios but also assessed the popularity of specific products, represented by the size of the bars and reflected in the legend. This approach enables a comprehensive evaluation of product popularity, discount levels, and average profit ratios.</p>
+							<p>In the tables sub-category, the Chromcraft Coffee Table stands out as exceptionally popular, with a median discount of 23% and a profit ratio of -8.62%. Comparing the coffee table to the training tables, it's noteworthy that the rectangular table performs relatively better than the other two Chromcraft tables and is priced significantly higher at $253, in contrast to the other two priced at $38 and $94.</p>
+							<p>In the machines sub-category, it is evident that the Epson TM-T88V is the most popular product, characterized by a median discount of 40% and a profit ratio of -5.45%.</p>
+							<p>This analysis prompts consideration of gathering additional information regarding the pricing of these Chromcraft tables, as it may present an opportunity to enhance the profit ratio and overall profitability for these products. I was able to recommended further analysis leveraging the marks and details tools in Tableau, even though it may not be visually depicted in the screenshot. This approach not only simplifies data interpretation visually but also enables the highlighting of specific data points when interacting with individual product bars through hovering or clicking for user-friendly access.</p>
+							
+							
+
+
+							
+							<h2>Tables Association Analysis</h2>
+							<span class="image main"><img src="images/Tables vs Chairs.png" alt="" /></span>
+							<p>I took an additional step by utilizing association analysis to investigate whether the sales of chairs could compensate for the low profitability of tables, considering that people typically purchase 4-6 chairs per table. My hypothesis was substantiated as the sales of chairs were nearly four times the quantity of table sales. Interestingly, chairs achieved a profit ratio of 0.54%, while tables lagged with a profit ratio of -0.41%.</p>
+							<p>Examining the discount aspect, the median discount for tables was at 40% of a substantially higher shelf price per item, compared to 35% for chairs with a lower shelf price per item. Consequently, the sales in chairs generally counterbalance the poor profit margin of tables. However, there's room for improvement, particularly by implementing restrictions on discounting practices for chairs.</p>
+							
+							
+
+
+
+
+							<h2>Printers Association Analysis</h2>
+							<p>To maintain printers in operational use, the ongoing supply of paper and ink is essential. To explore this, I employed the wildcard tool in Tableau to search for products related to "ink" to identify whether the Super Store offered these supplies. The wildcard tool revealed that ink products were not present in the store's offerings. Previously, I established that there is a separate sub-category of paper, which will be utilized. </p>
+							<p>I conducted an association analysis specifically focusing on printers and paper to gain insights into their dynamic relationship and explore potential correlations between these two product categories.</p>
+
+							<span class="image main"><img src="images/Machines vs Paper.png" alt="" /></span>
+							<p>I was able to confirm my hypothesis, which indicated a significantly higher volume of paper purchases compared to printers. Specifically, paper purchases outnumbered printer purchases by approximately 2.6 times. As expected, the gross revenue generated by printers exceeded that of paper, largely due to the relatively higher shelf price of powerful machines and their accessories.</p>
+							<p>However, the total profit generated by printers only surpassed that of paper by $1,732, despite the higher gross revenue. This discrepancy is primarily driven by the high median discount applied to printers, representing a substantial 47% discount off the $109 shelf price. In contrast, papers received a lower median discount, averaging around 20% off the $16 shelf price. Consequently, the profit ratio for printers was considerably lower than that of paper.</p>
+
+
+
+
+
+
+
+							<h2>Key Findings</h2>
+							<p>My key findings can be summarized by a lack of effective discount implementation in terms of their magnitude, timing, and marketing strategies.</p>
+							<p>Therefore, I would propose a strategy involving an increase in the prices of table and printer products for consumers, complemented by the implementation of what appears to be a "medium" and "big" discount for marketing purposes. This strategy draws inspiration from the advertising tactics employed by popular arts and crafts Super Store Hobby Lobby, where a 50% discount can have a psychological effect on consumers, making them feel like they're getting a "good" deal. However, when considering actual pricing in the broader market, the full price might still be considerably higher. Overall, the discounted price must not exceed the market price to other big retail super stores for a competitive advantage. </p>
+							<p>This advertising strategy has the potential to be quite appealing to the substantial customer base of teachers and mothers who typically prepare for their "back-to-school" shopping towards the end of the summer. Implementing these controlled discounts can effectively target this specific segment and contribute to increased profitability for this Super Store.</p>
+							<p>In addition to the discounts analysis, I would recommend digging deeper into data collection related to returns and gaining a comprehensive understanding of the systems and processes involved in shipping and handling for this Super Store. The data indicates a clear lack of quality control, as evidenced by the majority of return reasons being attributed to receiving the wrong item or experiencing unsuccessful deliveries. Addressing this issue can significantly enhance customer satisfaction and retention.</p>
+
+						</section>
+
+				</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+						
+					<section>
+						<h2>Contact Me</h2>
+						<dl class="alt">
+							<dt>Address</dt>
+							<dd>Smyrna, GA</dd>
+						
+							<dt>Email</dt>
+							<dd><a href="#">r.baek4380@gmail.com</a></dd>
+						</dl>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">fa-linkedin</span></a></li>
+						</ul>
+					</section>
+					<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

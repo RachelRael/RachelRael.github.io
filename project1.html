@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Excel Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>KickStarter Campaign Project</h1>
+						<p>Focused on maximizing advanced Microsoft Excel functions to complete the entire data analysis process</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								
+								<h2>Purpose</h2>
+								<p>To support creative artists maximize their potential to succeed in a Kickstarter campaign. Thus, the artists will be able to receive funding from their pledgers to kick start their project. </p>
+								
+								<h2>Data Cleaning</h2>
+								<span class="image main"><img src="images/data cleaning.png" alt="" /></span>
+								<p>To initiate the data cleaning process, I began by compiling clear definitions for each data category to establish a foundational understanding of the dataset at hand. The provided screenshot serves as a reference point for both myself and potential key stakeholders, enabling us to track the chronological sequence of actions taken in a step-by-step manner.</p>
+								<p>In order to identify errors, I implemented several key procedures. Firstly, I removed duplicate entries to streamline the dataset. Next, I focused on standardizing data by addressing spelling and formatting inconsistencies through the use of the find and replace function. Additionally, I ensured that data types were correctly formatted to align with their associated values.</p>	
+								<p>It is worth emphasizing that I maintained separate files at various stages of the data scrubbing process. This approach was taken to facilitate meticulous tracking of all alterations made, ensuring transparency and traceability throughout the cleaning process. </p>
+								
+								<h2>Data Analysis</h2>
+								<span class="image main"><img src="images/Stats.png" alt="" /></span>
+								<p>To initiate the data analysis process, I began by seeking basic insights into the data's characteristics, specifically focusing on their ranges and expected values. The screenshot above illustrates the descriptive statistics, where I employed Excel functions to calculate each formula. Alternatively, the Microsoft Excel ToolPak offers a convenient option for generating summary descriptive statistics.</p>
+								<span class="image main"><img src="images/Category Analysis.png" alt="" /></span>
+								<p>Furthermore, I directed my analysis towards a specific audience: potential Kickstarter campaign artists. Among the fields available for artists to choose from in their Kickstarter campaigns, I concentrated on three primary attributes—category, monetary goal amount, and the deadline for their goal. These fields were deemed essential for the analysis due to their significance in campaign success.</p>
+								<p>Regarding categories, I identified that dance, theater, and music categories exhibit the highest success rates among Kickstarter campaigns. This determination was made using a pivot table, which correlated unique project IDs with their respective categories and success/failure status. By focusing on success rates, we gain a comprehensive understanding of the overall performance of these categories. For example, Film&Video are very popular but is not as successful as the other cateogires.</p>
+								<span class="image main"><img src="images/Goal Analysis.png" alt="" /></span>
+								<p>For goal amounts, I employed a histogram to visualize the frequency distribution of successful projects across different goal bins. Notably, the median goal amount for successful projects is $3,000, with the most frequent goal being precisely $5,000 and average goal being $5,537. This suggests that the majority of successful projects aim for goals up to approximately $5,500. To delve deeper, I employed a pivot table with increments set to each decimal value (0.1) for the funded percentage. This analysis revealed that 47% of goals achieve funding within the 100-110% range, with $5,000 being the most common goal amount. Conversely, a goal of $10,000 is the most likely to result in failure and should, therefore, be approached with caution.</p>
+								<span class="image main"><img src="images/Duration Analysis.png" alt="" /></span>
+								<p>Regarding project duration, it was observed that the majority of successful campaigns span approximately 25-31 days, with 7,508 successful campaigns falling within this timeframe. Additionally, I conducted an analysis using a pivot table to investigate the popularity of specific days of the week for successful campaigns, revealing that no significant trends favor any particular day for campaign success.</p>
+								
+								<h2>Key Findings</h2>
+								<span class="image main"><img src="images/Conclusion.png" alt="" /></span>
+								<p>In conclusion, the Kickstarter analysis offers valuable guidance for aspiring artists planning to launch campaigns in the fields of dance, theater, and music. Based on the insights gained from this analysis, it is recommended that these artists set their funding goals at $5,500 or less and opt for a campaign duration of approximately 25-31 days. By doing so, they significantly enhance their chances of campaign success and increase the likelihood of receiving full funding from their pledgers. This strategic approach aligns with historical trends and success rates, providing a practical roadmap for future Kickstarter campaigns in these creative categories.</p>
+							</section>
+
+					</div>
+
+
+
+
+
+
+
+
+				<!-- Footer -->
+				<footer id="footer">
+						
+					<section>
+						<h2>Contact Me</h2>
+						<dl class="alt">
+							<dt>Address</dt>
+							<dd>Smyrna, GA</dd>
+						
+							<dt>Email</dt>
+							<dd><a href="#">r.baek4380@gmail.com</a></dd>
+						</dl>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">fa-linkedin</span></a></li>
+						</ul>
+					</section>
+					<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

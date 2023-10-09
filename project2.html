@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SQL Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Profit Analysis of Diageo Liquor Sales in Iowa</h1>
+						<p>A project focused on increasing overall profit utilizing SQL and Microsoft Excel</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								
+								<h2>Overall Business Goals</h2>
+								<p>To increase overall profit by focusing on the following:</p>
+								<p>Understand current state of business performance, Analyze potential areas of increasing profit by increasing profit margin, Strategize relative factors for increasing profit margin (demographics, popularity, seasons, locations)</p>
+								
+								<h2>Getting Familiar With the DataSet</h2>
+								<span class="image main"><img src="images/Schema Map.png" alt="" /></span>
+								<p> The provided dataset encompasses liquor sales data for the entire state of Iowa and is organized into four tables. These tables consist of the primary key "sales" table and three additional foreign keys, which are counties, stores, and products tables. The accompanying image offers a visual representation of the relationships between these four tables, illustrating how they are interconnected and how data flows between them.</p>
+								
+								<h2>Understanding Where Diageo Stands Among Liquor Vendors and Sales in Iowa</h2>
+								<span class="image main"><img src="images/Iowa Overall Sales.png" alt="" /></span>
+								<span class="image main"><img src="images/Diageo Top Sales.png" alt="" /></span>
+								<p>The following SQL queries aim to provide a high-level overview of vendor competition within the Iowa liquor market, with a specific focus on identifying the top-grossing products using the count distinct function for Diageo. Diageo stands out as the leading vendor in Iowa's liquor sales, boasting a substantial total sales revenue of $84,264,824. Additionally, notable vendors in this market include Jim Beam Brands, Pernod Ricard, Brown-Forman, among others. The primary focus of this analysis revolves around identifying the top-performing products, with Canadian Whiskies and Spiced Rums emerging as key categories of interest.</p>
+
+								<h2>Introduction to Analysis</h2>
+								<span class="image main"><img src="images/Profit:Popularity.png" alt="" /></span>
+								<p>Among the spiced rum products, Captain Morgan stands out as the most popular and the top revenue generator, closely followed by the Canadian whisky, Crown Royal. It's worth highlighting that while profit and total sales are correlated with each other, they do not necessarily correlate with popularity. To delve deeper into this, the SQL query calculating the sum of bottle quantities sheds light on the total number of bottles sold for each product.</p>
+								<p>Interestingly, Captain Morgan Original Spiced, while being the second most popular, ranks sixth in both revenue and profit generation. This observation presents an intriguing opportunity for further analysis and exploration into the factors influencing product popularity versus financial performance.y</p>
+
+								<h2>In-Depth Analysis of KPI</h2>
+								<span class="image main"><img src="images/KPI.png" alt="" /></span>
+								<p>To gain a comprehensive understanding of how each spiced rum and Canadian whiskey product compares to one another, I've introduced a key performance indicator (KPI): dollar profit amount per bottle sold. This metric serves as a valuable tool for assessing profit margins, pricing analysis, popularity, supply chain efficiency, and marketing strategies. It's crucial to emphasize that the size of the liquor bottles plays a significant role in both profit per bottle and popularity assessments.</p>
+								<span class="image main"><img src="images/KPI 2.png" alt="" /></span>
+								<p>For instance, the Canadian Whiskey Crown Royal 1750 ml product stands out as the leader in profit per bottle, indicating an impressive profit margin. However, it's essential to note that it may not be as popular or contribute as significantly to the total profit and total revenue.</p>
+								<p>In contrast, the most popular and top revenue-generating bottle, Captain Morgan Spiced Rum 1000 ml, exhibits a comparatively low profit per bottle. This observation suggests an opportunity for potential price adjustments or marketing strategies aimed at improving profit margins while maintaining popularity.</p>
+								
+								<h2>Captain Morgan Analysis</h2>
+								<span class="image main"><img src="images/Cap Morg Price.png" alt="" /></span>
+								<p>In the analysis spanning all Captain Morgan products, a consistent profit margin of 33% was identified across the product range. Given the popularity and strong sales performance of these products, I would recommend considering a marginal increase in the profit margin for the top two most popular spiced rum products, aiming for approximately 35%. This adjustment is poised to enhance the profit per bottle KPI without a substantial impact on sales popularity.</p>
+								<p>Moreover, for the following two products, which are not as popular, a more aggressive pricing approach can be explored, targeting a profit margin of around 40%. This strategy could potentially stimulate sales while maximizing profitability, especially for those products where popularity is not the primary driver of revenue.</p>
+								<span class="image main"><img src="images/Months Analysis.png" alt="" /></span>
+								<span class="image main"><img src="images/Cap Morg Months.png" alt="" /></span>
+								<p>Additionally, these proposed price adjustments can be implemented during the specific months as indicated in the provided visuals. To facilitate this, I developed SQL case statements to extract the month numbers from the dates and to encode them accordingly to their respective month names. </p>
+								<span class="image main"><img src="images/County Analysis.png" alt="" /></span>
+								<span class="image main"><img src="images/Store Analysis.png" alt="" /></span>
+								<p> In the final stages of the analysis, I explored into the geographical distribution of sales, with a particular focus on store locations. Notably, the majority of product sales exhibited a strong preference for Polk County. This aligns with the fact that Polk County boasts the highest population among all counties in Iowa. Additionally, the sales trends pointed to a significant presence in stores like Hy-Vee and Wholesale Membership Clubs.</p>
+								<p>Given these insights, the proposed price change recommendations can be strategically implemented in these high-traffic stores, particularly during the first quarter of the year. This approach takes advantage of the robust demand and popularity of products in these locations, potentially leading to successful outcomes for the suggested pricing adjustments.</p>
+
+								<h2>Crown Royal Analysis</h2>
+								<span class="image main"><img src="images/Crown Price.png" alt="" /></span>
+								<span class="image main"><img src="images/Crown Months.png" alt="" /></span>
+								<p>For the Crown Royal products, I followed the same analytical approach, employing similar queries and making adjustments as necessary with specific item numbers. Just as with the Captain Morgan products, I also observed a consistent profit margin of 33% across all Crown Royal items.</p>
+								<p>Given the strong popularity of the 1000 and 750ml products, I recommend considering an increase in the profit margin to approximately 40%. This adjustment has the potential to boost the profit per bottle KPI without significantly affecting the popularity of these products.</p>
+								<p>Conversely, for the 1750ml product, which is not as popular but commands a high shelf price (resulting in the highest KPI), a reduction in the profit margin could be explored to potentially stimulate sales and align the product more closely with market demand.</p>
+
+
+								<h2>Conclusion</h2>
+								<span class="image main"><img src="images/Cap Morg Conclusion.png" alt="" /></span>
+								<span class="image main"><img src="images/Crown Conclusion.png" alt="" /></span>
+								<p>In summary, the recommendations put forward aim to enhance profit margins and subsequently increase profit per bottle while striving to maintain or only marginally reduce sales popularity. The accompanying visuals serve as a concise summary of these suggestions.</p>
+
+								<p>Throughout this project, I gained proficiency in several critical aspects of data analysis, including SQL queries, optimizing query output to reduce processing time, employing case statements, utilizing wildcards and various types of joins, implementing grouping and aggregate functions, and drawing meaningful insights from the data. These skills and insights will prove invaluable for future data analysis endeavors.</p>
+
+								<h2>Limitations</h2>
+								<p>Limitations of this analysis encompass a restricted dataset, encompassing only the years 2014-2015, which is relatively outdated and spans only a year of data. Additionally, the analysis concentrated solely on the top revenue and profit-producing products. To yield comprehensive benefits for the company, it is imperative to extend the analysis to encompass all product categories.</p>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+						
+					<section>
+						<h2>Contact Me</h2>
+						<dl class="alt">
+							<dt>Address</dt>
+							<dd>Smyrna, GA</dd>
+						
+							<dt>Email</dt>
+							<dd><a href="#">r.baek4380@gmail.com</a></dd>
+						</dl>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">fa-linkedin</span></a></li>
+						</ul>
+					</section>
+					<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
